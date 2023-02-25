@@ -1,0 +1,4 @@
+texto = input("Digite Codigo de barras >")  # pergunta para usuario o texto é capitura 
+texto = texto.replace(".","").replace(",","").replace(" ","")   #acada .replace tem que ter "aser tratado" um , e um ""
+
+print(texto)    # Mostra texto Tratado para usuario

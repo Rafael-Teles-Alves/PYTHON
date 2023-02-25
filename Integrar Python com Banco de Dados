@@ -1,0 +1,12 @@
+import pyodbc	# Biblioteca Que Ira Usar para Comunicar Com Banco De Dados
+
+dados_conexao = (	# Define Uma Variavel Para Usar Com Os Dados Como
+	"Driver={SQL Server};"	# Driver Senpre SQL Server
+ 	"Server=DESKTOP-N474MHL\SQLEXPRESS;"	# Aqui Nome Do Server Quando Nos Criamos Nosso Banco De Dados
+ 	"Database=PRIMEIRO_SERVIDOR;"	# Database Que Se Refere Nome Da Tabela Que Criamos
+)
+#
+conexao = pyodbc.connect(dados_conexao)	# Uma Variavel que chama Biblioteca E Passa Os Dados De Conexão
+print('Bem Vindo a tabela')	# Passa Uma Mensagem que Mostre que nosso programa foi executada com sucesso
+
+cursor = conexao.cursor()	# Passa um Cursor Que Permite Nos Consutar o que tem no banco de dados

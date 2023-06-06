@@ -1,7 +1,7 @@
 import pyodbc	# Biblioteca Que Ira Usar para Comunicar Com Banco De Dados
 
 dados_conexao = (	# Define Uma Variavel Para Usar Com Os Dados Como
-	"Driver={SQL Server};"	# Driver Senpre SQL Server
+	"Driver={SQL Server};"	# Driver Sempre SQL Server
  	"Server=DESKTOP-N474MHL\SQLEXPRESS;"	# Aqui Nome Do Server Quando Nos Criamos Nosso Banco De Dados
  	"Database=PRIMEIRO_SERVIDOR;"	# Database Que Se Refere Nome Da Tabela Que Criamos
 )
